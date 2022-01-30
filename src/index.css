@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+:root {
+  --grey: #f5f5f5;
+  --blue: #30475e;
+  --pink: #f05454;
+  --black: #121212;
+}
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  background: var(--grey);
+}
+
+.container {
+  width: 580px;
+  padding: 2em;
+  margin: 5em auto;
+  border-radius: 5px;
+  background: var(--black);
+  box-shadow: -8px 8px 15px var(--blue);
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 1em;
+  color: var(--grey);
+  font-weight: normal;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+.search_bar {
+  width: 100%;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search_bar input {
+  width: 80%;
+  padding: 0.3em 0.5em;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  background: var(--pink);
+  color: var(--grey);
+}
+
+.search_bar button {
+  border: none;
+  outline: none;
+  width: 20%;
+  font-size: 1.2rem;
+  padding: 0.35em;
+  background: transparent;
+  color: var(--grey);
+  transition: all 0.3s ease;
+}
+
+.search_bar button:hover {
+  background: var(--grey);
+  color: var(--blue);
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--grey);
+  padding: 0.5em 0.8em;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--pink);
+}
+
+h3 {
+  margin-left: 1em;
+  cursor: pointer;
+  font-size: 1rem;
+  background: var(--blue);
+  color: var(--grey);
+  padding: 0.5em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+h3:hover {
+  background: var(--pink);
+}
+
+.notification {
+  padding: 0.3em;
+  margin-bottom: 0.8em;
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.notGreenColor {
+  background: var(--blue);
+  color: var(--grey);
+}
+.notRedColor {
+  background: var(--grey);
+  color: var(--blue);
+}
+.notEditColor {
+  background: #008000;
+  color: #adff2f;
+}
+
+.edit_page {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.808);
+  display: grid;
+  place-items: center;
+}
+
+.edit_page form {
+  width: 400px;
+  background: red;
+  display: grid;
+  place-items: center;
+  padding: 2.5em;
+  background: var(--black);
+  border-radius: 5px;
+  border: 2px solid var(--grey);
+}
+
+.edit_page form input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background: var(--pink);
+  color: var(--grey);
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+  margin-bottom: 1.3em;
+}
+
+.edit_page form .btn {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.edit_page form button {
+  font-size: 1.3rem;
+  width: 60%;
+  background: var(--blue);
+  color: var(--grey);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.3em 1.5em;
+  transition: all 0.3s ease-in-out;
+  margin: 0.2em;
+  text-transform: lowercase;
+}
+
+.edit_page form button:hover {
+  background: var(--grey);
+  color: var(--black);
+}
